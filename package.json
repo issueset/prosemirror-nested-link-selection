@@ -1,0 +1,50 @@
+{
+  "name": "prosemirror-playground",
+  "type": "module",
+  "version": "0.0.0",
+  "private": true,
+  "packageManager": "pnpm@9.15.0",
+  "description": "",
+  "author": "ocavue <ocavue@gmail.com>",
+  "license": "MIT",
+  "funding": "https://github.com/sponsors/ocavue",
+  "homepage": "https://github.com/ocavue/prosemirror-playground#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ocavue/prosemirror-playground.git"
+  },
+  "bugs": "https://github.com/ocavue/prosemirror-playground/issues",
+  "keywords": [],
+  "sideEffects": false,
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "vite build",
+    "dev": "vite",
+    "lint": "eslint .",
+    "fix": "eslint --fix . && prettier --write .",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@antfu/ni": "^0.23.1",
+    "@ocavue/eslint-config": "^2.11.2",
+    "@types/node": "^20.17.5",
+    "eslint": "^9.14.0",
+    "esno": "^4.8.0",
+    "prettier": "^3.4.2",
+    "prosemirror-example-setup": "^1.2.3",
+    "prosemirror-model": "^1.24.1",
+    "prosemirror-schema-basic": "^1.2.3",
+    "prosemirror-schema-list": "^1.5.0",
+    "prosemirror-state": "^1.4.3",
+    "prosemirror-view": "^1.37.1",
+    "typescript": "^5.6.3",
+    "vite": "^5.4.11"
+  },
+  "renovate": {
+    "extends": [
+      "github>ocavue/config-renovate"
+    ]
+  }
+}
